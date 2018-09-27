@@ -12,7 +12,7 @@
  *
  */
 metadata {
-	definition (name: "Z-Wave Battery Thermostat", namespace: "smartthings", author: "SmartThings") {
+	definition (name: "Z-Wave Battery Thermostat", namespace: "smartthings", author: "SmartThings", ocfDeviceType: "oic.d.thermostat") {
 		capability "Actuator"
 		capability "Temperature Measurement"
 		capability "Thermostat Heating Setpoint"
@@ -37,7 +37,7 @@ metadata {
 
 		fingerprint inClusters: "0x43,0x40,0x44,0x31,0x80"
 		fingerprint mfr: "014F", prod: "5442", model: "5431", deviceJoinName: "Linear Z-Wave Thermostat"
-		fingerprint mfr: "014F", prod: "5442", model: "5436", deviceJoinName: "2Gig Z-Wave Programmable Thermostat"
+		fingerprint mfr: "014F", prod: "5442", model: "5436", deviceJoinName: "Go Control Z-Wave Thermostat"
 	}
 
 	tiles {
